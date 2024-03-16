@@ -1,0 +1,167 @@
+@media(min-width:576px) {
+    .nav-items {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .zoomit-logo {
+        margin-left: 30px;
+    }
+
+    .barresi {
+        position: relative;
+        top: 5px;
+    }
+
+    .video {
+        position: relative;
+        top: 5px;
+    }
+
+    .main-intro {
+        flex-direction: column;
+        padding-right: 20px;
+    }
+
+    .right-intro {
+        width: 100%;
+    }
+
+    .left-intro {
+        width: 100%;
+        height: 10rem;
+        padding-right: 20px;
+    }
+    .right-intro p {
+        width: 100%;
+    }
+
+
+    .right-main {
+        width: 100%;
+        margin-right: 5rem;
+    }
+
+    .left-main {
+        width: 93%;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .latest-content {
+        width: 95%;
+    }
+
+    .latest-post {
+        justify-content: space-between;
+        background-color: #1d1f20;
+    }
+
+    .latest-post img {
+        width: 9rem;
+        height: 9rem;
+        cursor: pointer;
+    }
+
+    :is(.most-visited-second , .main-barresi-second) {
+        gap: 1.3rem;
+    }
+
+    .footer-bottom p {
+        width: 80%;
+    }
+}
+
+
+@media(min-width:768px) {
+
+    .zoomit-logo {
+        margin-left: 70px;
+    }
+
+    .nav-items {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 15px;
+    }
+
+    .user {
+        font-size: 20px;
+    }
+
+    .barresi {
+        top: 0;
+    }
+
+    .video {
+        top: 0;
+    }
+
+    .main-intro {
+        flex-direction: row;
+        padding-right: 50px;
+    }
+    .right-intro {
+        width: 30%;
+    }
+
+    .left-intro {
+        width: 70%;
+        margin-left: 50px;
+    }
+}
+
+
+@media(min-width:992px) {
+}
+    
+
+@media(min-width:1200px) {
+    .zoomit-logo {
+        margin-left: 9.5em;
+    }
+
+    .right-intro p {
+        width: 70%;
+    }
+
+    .right-main {
+        width: 50%;
+        margin-right: 2rem;
+    }
+    .left-main {
+        width: 50%;
+        margin-right: 0;
+        background-color: #1d1f20;
+    }
+
+    .main {
+        flex-direction: row;
+    }
+
+    .latest-content {
+        width: 80%;
+    }
+
+    .latest-post img {
+        width: 9rem;
+        height: 9.5rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .most-visited {
+        width: 80%;
+    }
+
+    :is(.most-visited-second , .main-barresi-second) {
+        gap: 1rem;
+    }
+
+    .footer-bottom p {
+        width: 100%;
+    }
+}

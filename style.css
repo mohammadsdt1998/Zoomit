@@ -1,0 +1,1332 @@
+@font-face {
+    font-family: sahel;
+    src: url(fonts/Sahel.ttf) format("ttf"), url(fonts/Sahel.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-grid {
+    display: grid;
+}
+
+body {
+    background-color: #202425;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: sahel !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+}
+
+.post-opacity-100 {
+    overflow: hidden;
+    height: 30rem;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.post-opacity-100 h3 {
+    color: white;
+    position: absolute;
+    font-size: 27px;
+    bottom: 50%;
+    right: 20%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.post-opacity-50 {
+    min-width: 50%;
+}
+
+:is(.post-opacity-50 , .zoomit-post ) {
+    overflow: hidden;
+    height: 15rem;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+:is(.recommend-posts , .best-articles-posts , .zoomit-content) {
+    width: 88%;
+    overflow-x: scroll;
+    height: auto;
+    gap: 20px;
+}
+
+:is(.best-articles-posts , .zoomit-content) {
+    margin: 2rem 5rem 2rem 0;
+}
+
+.post-opacity-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.post-opacity-img:hover {
+    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+:is(.post-opacity-50 , .zoomit-post) h3 {
+    width: 90%;
+    margin-right: 0.5rem;
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    bottom: 40%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.post-opacity-caption {
+    width: 100%;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+    font-weight: 500;
+    top: 90%;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.post-opacity-caption i {
+    padding: 0 5px;
+}
+
+
+/* scrollbar style.... */
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: #292c2d;
+    border-radius: 10px;
+    box-shadow: inset 0px -1px 13px;
+}
+
+/* scroll bar end */
+
+/*----------------- nav styles----------- */
+
+nav {
+    justify-content: space-between;
+    background-color: #202425;
+    height: 70px;
+    width: 100%;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.nav-items {
+    margin-bottom: 10px;
+    height: 1.875em;
+    background-color: #202425;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-center {
+    padding: 20px;
+}
+
+.zoomit-logo {
+    height: 60%;
+    margin-top: 20px;
+}
+
+.my-zoomit {
+    margin-top: 15px;
+}
+
+.mahsoolat {
+    margin-top: 15px;
+}
+
+.mahsoolat:hover p {
+    color: #ff6961;
+}
+
+.fanavari {
+    margin-top: 15px;
+}
+
+.fanavari:hover p {
+    color: #ff6961;
+}
+
+.nav-zoomit {
+    margin-top: 15px;
+}
+
+.nav-zoomit:hover p {
+    color: #ff6961;
+}
+
+.kharid:hover {
+    color: #ff6961;
+}
+
+
+.barresi:hover {
+    color: #ff6961;
+}
+
+.video:hover {
+    color: #ff6961;
+}
+
+.nav-search {
+    margin-top: 15px;
+}
+
+.nav-search-icon {
+    background-color: #ffffff;
+    height: 1.25em;
+    border-radius: 50%;
+    font-size: 11px !important;
+    color: #202425 !important;
+}
+
+.user {
+    background-color: #202425;
+    border: none;
+    color: #eeeeee;
+    margin-top: 25px;
+}
+
+
+/* ----------------end of nav styles----------- */
+
+
+/* ----------nav-drop-down---------- */
+
+.drop-down-style {
+    display: none;
+    position: absolute;
+    background-color: #292c2d;
+    border: none;
+    border-radius: 10px;
+    z-index: 2;
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mahsoolat-drop-down {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.mahsoolat-drop-down ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.mahsoolat-drop-down li {
+    padding: 5px 0;
+}
+
+.mahsoolat-drop-down li:hover {
+    color: #db5e58;
+}
+
+.mahsoolat:hover .mahsoolat-drop-down {
+    display: flex;
+}
+
+.fanavari-drop-down {
+    margin-top: 25px;
+}
+
+.fanavari-drop-down ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.fanavari-drop-down li {
+    padding: 5px 0;
+}
+
+.fanavari-drop-down li:hover {
+    color: #db5e58;
+}
+
+
+.fanavari:hover .fanavari-drop-down {
+    display: flex;
+    /* gap: 20px; */
+}
+
+.nav-zoomit-drop-down {
+    margin-top: 25px;
+}
+
+.nav-zoomit-drop-down ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.nav-zoomit-drop-down li {
+    padding: 5px 0;
+}
+
+.nav-zoomit-drop-down li:hover {
+    color: #db5e58;
+}
+
+.nav-zoomit:hover .nav-zoomit-drop-down {
+    display: flex;
+    /* gap: 20px; */
+}
+
+/* -----------end of nav drop down------------- */
+
+
+
+
+/* nav-search popup */
+
+
+.search-popup {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
+}
+
+.search-popup-content {
+    flex-direction: column;
+    align-items: center;
+    background-color: #1d1f20;
+    width: 100%;
+    height: 300px;
+}
+
+.search-bar {
+    margin-top: 30px;
+    /* width: 900px; */
+    padding: 0 20em;
+    /* height: 25px; */
+    background-color: #2b2d2e;
+    border: none;
+    border-radius: 30px;
+}
+
+.search-bar input {
+    background-color: #2b2d2e;
+    border: none;
+    padding: 5px;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.search-bar input::placeholder {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar i {
+    color: #eeeeee;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.popup-caption {
+    justify-content: flex-start;
+    margin-top: 40px;
+    position: relative;
+    left: 330px;
+    gap: 60px;
+}
+
+.popup-hotest {
+    color: #ffffff;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.popup-caption ul {
+    color: red;
+    flex-direction: column;
+    list-style: disc;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.popup-caption a {
+    color: #eeeeee !important;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.popup-caption a:hover {
+    color: #db5e58 !important;
+}
+
+
+/* end of nav search popup */
+
+
+
+
+/* header backgrounds : */
+
+
+.header-background {
+    flex-wrap: wrap;
+    height: 31.25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.header-right-background {
+    overflow: hidden;
+    height: auto;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+    width: 50%;
+}
+
+.header-center-background {
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.header-left-background {
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+.zoom-right {
+    background-image: url(images/mgs-sphere-in-las-vegas-64b7a62b424f07b1a20ca245.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.zoom-center {
+    background-image: url(images/xiaomi-redmi-note-12-pro-5g-full-back-64b67cec424f07b1a20c9e5d.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.zoom-left {
+    background-image: url(images/mehrdad-masoud-haniye-mobile-zoomcast-64b8d78c424f07b1a20ca4b3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.zoom-right:hover {
+    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.zoom-center:hover {
+    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.zoom-left:hover {
+    transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.header-background h2 {
+    color: white;
+    position: absolute;
+    font-size: 28px;
+    bottom: 8px;
+    right: 16px;
+}
+
+
+/* end of header background and zoom */
+
+/* main intro styles : >>>> */
+
+.main-intro {
+    width: 100%;
+    background-color: #1d1f20;
+    height: auto;
+}
+
+.right-intro {
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.right-intro-header::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.right-intro-header h3 {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.right-intro p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.intro-button button {
+    background-color: rgba(70, 69, 69, 0.5);
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.intro-button button:focus {
+    outline: none;
+}
+
+.intro-button {
+    background-color: rgba(70, 69, 69, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.intro-button i {
+    color: #e4002b;
+    margin-right: 10px;
+}
+
+.intro-button:hover {
+    background-color: rgba(70, 69, 69, 0.8);
+}
+
+
+.left-intro {
+    overflow-x: scroll;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.left-intro div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-intro a {
+    color: #ffffff !important;
+}
+
+.left-intro i {
+    font-size: 50px;
+    padding: 20px;
+}
+
+.left-intro p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* main intro end */
+
+
+/* main recommend >>> */
+
+.recommend {
+    height: 25rem;
+    width: 100%;
+    margin-top: 4rem;
+    margin-right: 5rem;
+}
+
+.recommend-header::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.recommend-header h3 {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.recommend-header {
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.recommend-buttons {
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.recommend-matlab {
+    width: 4rem;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: rgba(70, 69, 69, 0.5);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.recommend-matlab:hover {
+    background-color: rgba(70, 69, 69, 0.8);
+}
+
+.recommend-video {
+    width: 4rem;
+    padding: 8px;
+    border: 1px solid #eeeeee;
+    border-radius: 50px;
+    color: #ffffff;
+    background-color: #202425;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.recommend-posts {
+    margin-top: 30px;
+}
+
+.single-post {
+    flex-direction: column;
+    height: auto;
+    min-width: 20rem;
+    border-radius: 3px;
+    background-color: #292c2d;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.single-post img {
+    width: 100%;
+    height: 60%;
+    border-radius: 3px;
+}
+
+.single-post p {
+    font-size: 18px;
+    font-weight: 800;
+    width: 90%;
+    margin-right: 20px;
+    margin-top: 15px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.single-post p:hover {
+    color: #fb6860;
+}
+
+.right-recommend-caption {
+    gap: 20px;
+    margin-right: 15px;
+}
+
+.single-post-caption i {
+    padding-left: 3px;
+}
+
+.single-post-caption {
+    margin-top: 20px;
+    color: #ffffff;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.post-ellipsis {
+    margin-left: 20px;
+    font-size: 18px !important;
+}
+
+
+/* main content >>>> */
+
+
+.main {
+    margin-top: 7rem;
+    width: 100%;
+    height: auto;
+}
+
+.left-main {
+    height: auto;
+    flex-direction: column;
+}
+
+.right-main {
+    height: auto;
+    flex-direction: column;
+}
+
+.latest-content {
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+.latest-content h2 {
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+.left-main-buttons {
+    margin: 2rem 0;
+}
+
+.left-main-buttons button {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #1d1f20;
+    border: 1px solid #eeeeee;
+    margin: 0 10px;
+    width: auto;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.latest-news-button {
+    background-color: rgba(70, 69, 69, 0.5) !important;
+    border: none !important;
+}
+
+.latest-news-button:hover {
+    background-color: rgba(70, 69, 69, 0.8) !important;
+}
+
+.latest-post {
+    margin-right: 1rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ffffff;
+    width: 98%;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.latest-caption {
+    flex-direction: column;
+    color: #cfcfd0;
+}
+
+.latest-caption h3 {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.latest-caption h3:hover {
+    color: #ff6961;
+}
+
+.latest-caption p {
+    margin-top: 1rem;
+    width: 95%;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.latest-comment {
+    margin-top: 3rem;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.latest-comment div {
+    gap: 5px;
+}
+
+
+.latest-more-link {
+    gap: 8px;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    font-size: 14px;
+}
+
+.latest-more-link p {
+    color: #ffffff;
+}
+
+.latest-more-link i {
+    color: #e4002b;
+}
+
+
+
+/* por bazdid tarin : */
+
+
+.most-visited::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.most-visited {
+    gap: 1rem;
+    flex-direction: column;
+    margin: 3rem 3rem 0 0;
+    height: auto;
+    width: 80%;
+}
+
+.most-visited h2 {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+
+
+.most-visited-1 {
+    background-image: url(images/best-smartphones-buying-guide-2023-63ebb2cdc316fdb62df551e0.webp);
+}
+
+.most-visited-second {
+    height: auto;
+    width: 97.5%;
+    /* gap: 1rem; */
+}
+
+.most-visited-2 {
+    background-image: url(images/celebrities-if-they-were-still-with-us-64bee401c779beb50bc3a0fe.webp);
+}
+
+.most-visited-3 {
+    background-image: url(images/2022-11-galaxy-watch-5-pro-on-wrist-638bb8e9a7331cd9fb2cecdb.webp);
+}
+
+
+
+                    /* rahnamye kharid : */
+
+
+.buy-help-h2::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.buy-help {
+    gap: 1rem;
+    flex-direction: column;
+    margin: 3rem 3rem 0 0;
+    height: auto;
+    width: 80%;
+}
+
+.buy-help-h2 h2 {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.buy-help-h2 {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.buy-help-h2 p {
+    font-size: 14px;
+    color: #eeeeee;
+}
+
+.buy-help-h2 i {
+    color: #e4002b;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+
+.buy-help-content {
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+.buy-help-1 {
+    background-image: url(images/best-gaming-android-tabs-64c53c1fd848873bb4e618da.webp);
+}
+
+.buy-help-2 {
+    background-image: url(images/best-smartphones-buying-guide-2023-63ebb2cdc316fdb62df551e0.webp);
+}
+
+.buy-help-3 {
+    background-image: url(images/headphones-earphones-64b7bfe0424f07b1a20ca2c2.webp);
+}
+
+.buy-help-4 {
+    background-image: url(images/mi-smart-xiaomi-64bbea9c9840004580e8e5d8.webp);
+}
+
+
+                    /* barresi ha : */
+
+
+.main-barresi::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.main-barresi {
+    flex-direction: column;
+    gap: 10px;
+    margin: 3rem 3rem 0 0;
+    height: auto;
+    width: 80%;
+}
+
+.main-barresi h2 {
+    padding: 0 15px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.barresi-1 {
+    background-image: url(images/lg-qned96-while-showing-picture-64c01eb0c779beb50bc3a2d5.webp);
+}
+
+.main-barresi-second {
+    height: auto;
+    width: 97.5%;
+    /* gap: 1rem; */
+}
+
+.barresi-2 {
+    background-image: url(images/msi-stelth-a15-display-64bbed079840004580e8e610.webp);
+}
+
+.barresi-3 {
+    background-image: url(images/xiaomi-redmi-note-12-mini-size.webp);
+}
+
+
+            /* social media : */
+
+.main-social-media {
+    flex-direction: column;
+    gap: 10px;
+    margin: 3rem 3rem 0 0;
+    height: auto;
+    width: 80%;
+}
+
+.youtube {
+    width: 100%;
+    height: 7rem;
+    background-image: linear-gradient(110deg, rgb(248, 86, 86), rgb(255, 0, 0));
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.youtube i {
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.youtube-text {
+    flex-direction: column;
+    padding: 0.7rem 1rem 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.youtube button {
+    margin-left: 1rem ;
+    width: 30%;
+    padding: 0.5rem;
+    background: none;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.youtube button:hover {
+    color: #cfcfd0;
+    border: 1px solid #cfcfd0;
+}
+
+.main-social-media div {
+    gap: 10px;
+    width: 100%;
+}
+
+.twitter {
+    width: 50%;
+    height: 7rem;
+    background-image: linear-gradient(110deg, rgb(61, 133, 183), rgb(61, 133, 183));
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.twitter i {
+    padding: 1rem;
+    font-size: 30px;
+}
+
+.twitter-text {
+    flex-direction: column;
+    padding-right: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.instagram {
+    width: 50%;
+    height: 7rem;
+    background-image: linear-gradient(116deg, rgb(61, 133, 183), rgb(228, 0, 43) 59%, rgb(255, 153, 0) 122%);
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.instagram i {
+    padding: 1rem;
+    font-size: 30px;
+}
+
+.instagram-text {
+    flex-direction: column;
+    padding-right: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* behtarin maghalat : */
+
+.best-articles {
+    background-color: #1d1f20;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.best-articles-header::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.best-articles-header {
+    justify-content: space-between;
+    width: 88%;
+    margin: 2rem 5rem 0 0;
+    padding-top: 3rem;
+    color: #ffffff;
+}
+
+.best-articles-header h2 {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.best-articles-header p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.best-articles-header i {
+    color: #e4002b;
+    padding-right: 5px;
+}
+
+.main-btn {
+    margin: 2rem 5rem;
+    padding-bottom: 3rem;
+    gap: 20px
+}
+
+.main-btn button {
+    padding: 8px 15px;
+    background: none;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #eeeeee;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.most-view {
+    background-color: rgba(70, 69, 69, 0.5) !important;
+    border: none !important;
+}
+
+.most-view:hover {
+    background-color: rgba(70, 69, 69, 0.8) !important;
+}
+
+
+/* zoomit recomend : */
+
+.zoomit-recommend {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.zoomit-recommend-header::before {
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #e4002b;
+}
+
+.zoomit-recommend-header {
+    margin: 2rem 5rem;
+    color: #ffffff;
+}
+
+.zoomit-recommend-header h2 {
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+.amoozesh-btn {
+    background-color: rgba(70, 69, 69, 0.5) !important;
+    border: none !important;
+}
+
+.amoozesh-btn:hover {
+    background-color: rgba(70, 69, 69, 0.8) !important;
+}
+
+.zoomit-post {
+    min-width: 20rem;
+    margin-bottom: 10px;
+}
+
+.zoomit-1 {
+    background-image: url(images/2022-11-instagram-highlight-covers-638bb8f5a7331cd9fb2ced59.webp);
+}
+
+.zoomit-2 {
+    background-image: url(images/2020-4-94774b6b-9532-471e-875f-4cae4a4bed48-638baf0b8b369136d4583913.webp);
+}
+
+.zoomit-3 {
+    background-image: url(images/2022-8-what-is-virtual-number-how-to-make-one-638bb4fd1d67bb742b228617.webp);
+}
+
+.zoomit-4 {
+    background-image: url(images/2021-10-instagram-reels-social-commerce-638bb5e7154ec95275180016.webp);
+}
+
+.zoomit-5 {
+    background-image: url(images/2022-10-whatsapp-delete-account-638c662ca9353bba739b3107.webp);
+}
+
+.zoomit-6 {
+    background-image: url(images/2022-12-podcast-63945c903c683db0a488b0b8.webp);
+}
+
+
+
+                /* footer : */
+
+
+footer {
+    background-color: #1d1f20;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.footer-top {
+    color: #cfcfd0;
+    font-weight: 600;
+    gap: 10rem;
+
+}
+
+.footer-right {
+    flex-direction: column;
+}
+
+.footer-top li {
+    padding: 5px 0;
+}
+
+.footer-top-red{
+    width: 50px;
+    height: 4px;
+    border-radius: 25px;
+    background-color: #e4002b;
+    margin-bottom: 2rem;
+}
+
+.footer-left {
+    flex-direction: column;
+}
+
+.footer-left p {
+    margin-bottom: 2rem;
+}
+
+.footer-content {
+    width: 88%;
+    margin: 2rem 5rem 0 0 ;
+    padding-top: 10rem;
+    flex-direction: column;
+}
+
+.footer-bottom {
+    justify-content: space-between;
+    color: #cfcfd0;
+    padding: 4rem 0 2rem 0;
+}
+
+.footer-bottom a {
+    color: #cfcfd0;
+    font-size: 26px;
+    padding: 0 10px;
+}
+
+.footer-end {
+    width: 100%;
+    height: 10px;
+    background-color: #cfcfd0;
+}

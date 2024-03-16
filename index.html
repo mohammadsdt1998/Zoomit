@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoomit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-querries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="d-flex">
+        <div class="d-flex nav-center">
+          <img
+            src="images/Zoomit_Logo_English.svg.png"
+            alt=""
+            class="zoomit-logo"
+          />
+
+          <button class="d-flex my-zoomit nav-items">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <p>زومیت من</p>
+          </button>
+
+          <button class="d-flex mahsoolat nav-items">
+            <i class="fa-solid fa-plus"></i>
+            <p>محصولات</p>
+            <div class="mahsoolat-drop-down drop-down-style">
+              <ul>
+                <li>گوشی موبایل</li>
+                <li>تبلت</li>
+                <li>لپتاپ</li>
+                <li>تلویزیون</li>
+              </ul>
+
+              <ul>
+                <li>ساعت هوشمند</li>
+                <li>کنسول بازی</li>
+                <li>هارد دیسک</li>
+                <li>هندزفری و هدفون</li>
+              </ul>
+
+              <ul>
+                <li>کارت گرافیک</li>
+                <li>پردازنده</li>
+                <li>دوربین عکاسی</li>
+                <li>آل این وان</li>
+              </ul>
+            </div>
+          </button>
+
+          <button class="d-flex fanavari nav-items">
+            <i class="fa-solid fa-plus"></i>
+            <p>فناوری</p>
+            <div class="fanavari-drop-down drop-down-style">
+              <ul>
+                <li>گوشی موبایل</li>
+                <li>تبلت</li>
+                <li>لپتاپ</li>
+                <li>تلویزیون</li>
+                <li>ساعت و دستبند هوشمند</li>
+                <li>سخت افزار</li>
+              </ul>
+
+              <ul>
+                <li>فناوری ایران</li>
+                <li>نرم افزار و اپلیکیشن</li>
+                <li>سیستم عامل</li>
+                <li>اینترنت و شبکه</li>
+                <li>بازی</li>
+                <li>ارز دیجیتال</li>
+              </ul>
+
+              <ul>
+                <li>آموزش کامپیوتر</li>
+                <li>آموزش موبایل</li>
+                <li>آموزش عکاسی</li>
+                <li>شاتر</li>
+              </ul>
+            </div>
+          </button>
+
+          <button class="nav-items kharid mt-8">راهنمای خرید</button>
+
+          <button class="nav-items barresi mt-8">بررسی</button>
+
+          <button class="nav-items video mt-8">ویدیو</button>
+
+          <button class="d-flex nav-zoomit nav-items">
+            <i class="fa-solid fa-plus"></i>
+            <p>زومیت</p>
+            <div class="nav-zoomit-drop-down drop-down-style">
+              <ul>
+                <li>درباره ما</li>
+                <li>تبلیغات</li>
+                <li>فرصت های شغلی</li>
+              </ul>
+
+              <ul>
+                <li>تماس با ما</li>
+                <li>قوانین فعالیت</li>
+                <li>زومجی</li>
+              </ul>
+
+              <ul>
+                <li>کجارو</li>
+                <li>پدال</li>
+              </ul>
+            </div>
+          </button>
+
+          <button class="d-flex nav-search nav-items" id="search-btn">
+            <i class="fas fa-search nav-search-icon"></i>
+            <p>جستجو</p>
+          </button>
+        </div>
+
+        <button class="user">
+          <i class="fa-regular fa-circle-user"></i>
+        </button>
+      </nav>
+
+      <!-- search popup :  -->
+      <section class="search-popup hide" id="search-popup-window">
+        <div class="search-popup-content d-flex">
+          <div class="search-bar d-flex">
+            <i class="fas fa-search"></i>
+            <input type="search" placeholder="جستجو..." />
+          </div>
+          <div class="popup-caption d-flex">
+            <div class="popup-hotest d-flex">
+              <i class="fa-solid fa-fire"></i>
+              <p>داغ ترین ها</p>
+            </div>
+
+            <ul class="d-flex">
+              <li>
+                <a href="#">آموزش قدم به قدم</a>
+              </li>
+              <li>
+                <a href="#">راهنمای خرید گوشی</a>
+              </li>
+              <li>
+                <a href="#">آموزش اینستاگرام</a>
+              </li>
+              <li>
+                <a href="#">ویندوز 11</a>
+              </li>
+              <li>
+                <a href="#">بهترین اپلیکیشن ها</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- end of search popup -->
+
+      <section class="header-background d-flex">
+        <div class="header-right-background d-flex">
+          <div class="zoom-right"></div>
+          <h2>
+            مهندسی بی نهایت ؛ MSG Sphereلاس وگاس، بزرگترین و شگفت انگیز ترین
+            سازه کروی جهان
+          </h2>
+        </div>
+        <div class="header-center-background d-flex">
+          <div class="zoom-center"></div>
+          <h2>بررسی ردمی نوت 12 پرو و 12 پروپلاس؛ پلاس بی فایده!</h2>
+        </div>
+        <div class="header-left-background d-flex">
+          <div class="zoom-left"></div>
+          <h2>چرا نگران آینده بازار موبایل هستیم؟</h2>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="main-intro d-flex">
+        <div class="right-intro d-flex">
+          <div class="right-intro-header d-flex">
+            <h3>با چشم باز خرید کنید</h3>
+          </div>
+          <p>زومیت شما را برای انتخاب بهتر و خرید ارزان‌تر راهنمایی می‌کند</p>
+          <div class="intro-button d-flex">
+            <button>ورود به بخش محصولات</button>
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        </div>
+
+        <div class="left-intro d-flex">
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <p>گوشی</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <p>تبلت</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-laptop"></i>
+              <p>لپتاپ</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-tv"></i>
+              <p>تلویزیون</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-stopwatch"></i>
+              <p>ساعت هوشمند</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-headphones"></i>
+              <p>هدفون</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-regular fa-hard-drive"></i>
+              <p>هارد</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-gamepad"></i>
+              <p>کنسول بازی</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-compact-disc"></i>
+              <p>کارت گرافیک</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-microchip"></i>
+              <p>پردازنده</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-desktop"></i>
+              <p>مانیتور</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-sim-card"></i>
+              <p>SSD</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-camera"></i>
+              <p>دوربین</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-battery-empty"></i>
+              <p>پاوربانک</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-charging-station"></i>
+              <p>شارژر</p>
+            </a>
+          </div>
+
+          <div>
+            <a href="#">
+              <i class="fa-solid fa-volume-low"></i>
+              <p>اسپیکر</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommend">
+        <div class="recommend-header d-flex">
+          <h3>پیشنهاد سردبیر</h3>
+
+          <div class="recommend-buttons d-flex">
+            <button class="recommend-matlab">مطلب</button>
+            <button class="recommend-video">ویدیو</button>
+          </div>
+        </div>
+
+        <!-- پست های پیشنهاد سردبیر -->
+
+        <div class="recommend-posts d-flex">
+          <div class="single-post d-flex">
+            <img
+              src="images/living-on-mars-64c19a362b53d72bc2d39bbe.webp"
+              alt=""
+            />
+            <p>
+              این تصاویر نشان می دهند سال 2250،ده درصد از مردم در مریخ زندگی
+              خواهند کرد
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/galaxy-a54-ui-644685d990110de41ea7a82e.webp"
+              alt=""
+            />
+            <p>
+              تاریخ انتشار بتای اندروید ۱۴ برای گلکسی A54 و گلکسی A34 اعلام شد
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>5</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/sloanes-viperfish-64c269ba2b53d72bc2d39cc5.webp"
+              alt=""
+            />
+            <p>چرا ماهی های اعماق اقیانوس شبیه بیگانگان هستند؟؟</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>10</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/2021-4-whatsapp-chat-migration-ios-android-1-638c67848615ae71282af520.webp"
+              alt=""
+            />
+            <p>ارسال ویدیو مسیج در واتس اپ امکان پذیر شد</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>7</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/2020-11-apple-iphone-12-pro-pocket-picking-out-638c64b60b3d268f7f47aed8.webp"
+              alt=""
+            />
+            <p>فوری؛قیمت هر چهار مدل از آیفون 15 فاش شد!</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>21</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>8 ساعت پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/x-social-media-twitter-logo-dark-blue-64c0b666c779beb50bc3a3d4.webp"
+              alt=""
+            />
+            <p>ایلان ماسک آی دی X را در شبکه اجتماعی ایکس به زور تصاحب کرد!</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>3</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>9 ساعت پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img src="images/lisa-ai-64c14d3c2b53d72bc2d39b22.webp" alt="" />
+            <p>این مجری ها واقعی نیستند.</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>20</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/mark-zuckerberg-meta-ceo-smile-laugh-daylight-64c20c4b2b53d72bc2d39c07.webp"
+              alt=""
+            />
+            <p>زاکربرگ میخواهد کاربران تردز را به یک میلیارد نفر برساند</p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>3</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>2 روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main d-flex">
+        <div class="right-main d-flex">
+          <!-- por bazdid tarin : -->
+          <div class="most-visited d-flex">
+            <h2>پربازدیدترین مطالب</h2>
+            <div class="post-opacity-100 d-flex">
+              <div class="post-opacity-img most-visited-1"></div>
+              <h3>بهترین گوشی های موبایل بازار ایران</h3>
+
+              <div class="post-opacity-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>مطالعه 26</p>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <p>5 روز پیش</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="most-visited-second d-flex">
+              <div class="post-opacity-50">
+                <div class="post-opacity-img most-visited-2"></div>
+                <h3>
+                  70سالگی بروس لی و مرلین مونرو را به لطف هوش مصنوعی ببینید
+                </h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-opacity-50">
+                <div class="post-opacity-img most-visited-3"></div>
+                <h3>گلکسی واچ 6 سامسونگ؛ هرآنچه تاکنون می دانیم</h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- rahnamaye kharid : -->
+
+          <div class="buy-help d-flex">
+            <div class="buy-help-h2 d-flex">
+              <h2>راهنمای خرید</h2>
+
+              <a href="#" class="d-flex">
+                <p>مشاهده همه</p>
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+            </div>
+
+            <div class="buy-help-content d-flex">
+              <div class="post-opacity-50">
+                <div class="post-opacity-img buy-help-1"></div>
+                <h3>راهنمای خرید بهترین تبلت گیمینگ اندروید</h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-opacity-50">
+                <div class="post-opacity-img buy-help-2"></div>
+                <h3>بهترین گوشی های بازار موبایل ایران</h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-opacity-50">
+                <div class="post-opacity-img buy-help-3"></div>
+                <h3>
+                  راهنمای خرید هدفون و ایرفون؛قبل از خرید هدفون به چه نکاتی توجه
+                  کنیم؟
+                </h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-opacity-50">
+                <div class="post-opacity-img buy-help-4"></div>
+                <h3>بهترین اسپیکر بلوتوثی شیایومی</h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- barresi ha : -->
+
+          <div class="main-barresi d-flex">
+            <h2>بررسی ها</h2>
+
+            <div class="post-opacity-100 d-flex">
+              <div class="post-opacity-img barresi-1"></div>
+              <h3>
+                بررسی تلویزیون 8K وMini LED ال جی QNED96؛ سینما را به خانه
+                بیاور!
+              </h3>
+
+              <div class="post-opacity-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>مطالعه 26</p>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <p>5 روز پیش</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-barresi-second d-flex">
+              <div class="post-opacity-50">
+                <div class="post-opacity-img barresi-2"></div>
+                <h3>
+                  بررسی لپتاپ Stealth 15 A13V ام اس آی؛ سخت افزار کارآمد در بدنه
+                  ای جمع و جور
+                </h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-opacity-50">
+                <div class="post-opacity-img barresi-3"></div>
+                <h3>بررسی ردمی نوت 12 پرو و 12 پروپلاس؛ پلاس بی فایده</h3>
+
+                <div class="post-opacity-caption d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>مطالعه 6</p>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>6 روز پیش</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- social media :  -->
+
+          <div class="main-social-media d-flex">
+            <div class="youtube d-flex">
+              <div class="d-flex">
+                <i class="fa-brands fa-youtube"></i>
+                <div class="youtube-text d-flex">
+                  <p>یوتیوب زومیت</p>
+                  <p>به دنبال کننده ما بپیوندید</p>
+                </div>
+              </div>
+
+              <button>مشاهده ویدیوها</button>
+            </div>
+
+            <div class="d-flex">
+              <div class="twitter d-flex">
+                <i class="fa-brands fa-twitter"></i>
+                <div class="twitter-text">
+                  <p>توییتر زومیت</p>
+                  <p>به دنبال کننده ما بپیوندید</p>
+                </div>
+              </div>
+              <div class="instagram d-flex">
+                <i class="fa-brands fa-instagram"></i>
+                <div class="instagram-text">
+                  <p>اینستاگرام زومیت</p>
+                  <p>به دنبال کننده ما بپیوندید</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- akharin mataleb :  -->
+
+        <div class="left-main d-flex">
+          <div class="latest-content">
+            <h2>آخرین مطالب</h2>
+            <div class="left-main-buttons">
+              <button class="latest-news-button">جدیدترین مطالب</button>
+              <button>علمی</button>
+              <button>ایران</button>
+              <button>پربحث ترین</button>
+            </div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  مافیای پی پال؛داستان افرادی که دنیا را با تکنولوژی تغییر دادند
+                </h3>
+                <p>
+                  بخش مهمی از دنیای فناوری به مافیای پی پال و همکاری اعضای آن‌
+                  با یکدیگر برای خلق و پرورش ایده‌های جدید مدیون است.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>18</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>یک روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/pay26b1-64c22aa02b53d72bc2d39c36.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>کولر گازی پرتابل یا قابل حمل چیست؟؟</h3>
+                <p>
+                  در این مقاله کولرهای گازی پرتابل یا قابل حمل را به شما معرفی
+                  می‌کنیم که در جای خاصی ثابت نیستند و می‌توانید آن‌ها را
+                  جابه‌جا کنید.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>12</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>یک روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/portable-air-conditioners-1-64bff53cc779beb50bc3a255.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  ششمین مورد بیمار مبتلا به HIV به طرز غیرمنتظره ای درمان شده
+                  است
+                </h3>
+                <p>
+                  مردی پس از پیوند سلول‌های بنیادی وارد حالت بهبودی طولانی‌مدت
+                  از اچ‌آی‌وی شد، اما اهداکننده دارای ژن مقاومت در برابر HIV
+                  نبود.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>5</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>یک روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/researcher-64c6321e52098c84152eb55c.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  سامسونگ میخواهد فروش گوشی های پرچم دارش در مدت پنج سال به
+                  میزان فروش آیفون برسد
+                </h3>
+                <p>
+                  رئیس واحد تجربه‌‌ی موبایل سامسونگ می‌گوید میزان فروش گوشی‌های
+                  پرچم‌دار این برند در پنج سال آینده به میزان فروش آیفون‌های اپل
+                  خواهد بود.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>4</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>پنج ساعت پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/s23-s23-plus-cameras2-64340953d00bf97407d198d7.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>گردهمایی مدیران امنیت در عسلویه</h3>
+                <p>
+                  مراکز داده‌ی‌ نرم‌‌افزارمحور راه‌حلی برای بهینه‌سازی مدیریت
+                  زیرساخت مرکز داده است.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>42</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>دو روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/dejpaad-64c6779e52098c84152eb655.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  هشدار بازار: اپلیکیشن های بانکی را از منابع نامعتبر دانلود
+                  نکنید
+                </h3>
+                <p>
+                  پژوهشگران یک شرکت بین‌المللی حوزه امنیت نرم‌افزار و سخت‌افزار
+                  به تازگی از کشف بدافزار در نسخه‌های جعلی چند همراه‌بانک ایرانی
+                  خبر داده‌اند.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>10</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>دو روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/hyguolchqxtb-64c652cb52098c84152eb5e1.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>ناسا ارتباط با وویجر2 را موقتا از دست داد</h3>
+                <p>
+                  وویجر ۲ یکی از دو کاوشگر دوقلوی وویجر که از منظومه‌ی شمسی خارج
+                  شدند، ارتباط خود با زمین را موقتاً از دست داده است.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>10</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>دو روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/voyager-probe-solar-system-64c64f4b52098c84152eb5c1.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>کند شدن گوشی سامسونگ؛ دلایل و بهترین راه حل</h3>
+                <p>
+                  کند شدن گوشی سامسونگ ممکن است دلایل متفاوتی داشته باشد که در
+                  این مقاله به چند مورد از آن‌ها می‌پردازیم و راه‌حل‌هایی را
+                  برای رفعشان پیشنهاد می‌کنیم.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>5</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>سه روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/galaxy-s23-ultra-multitasking-63ea8a89c316fdb62df54ef4.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  ممنوعیت واردات آیفون14 حداقل 1650 میلیارد تومان به دولت ضرر
+                  زده است
+                </h3>
+                <p>
+                  ممنوعیت واردات آیفون ۱۴ حداقل ۱۶۵۰ میلیارد تومان به دولت ضرر
+                  زده است اتاق بازرگانی تهران و انجمن واردکنندگان موبایل در
+                  راستای ایجاد ثبات و تنظیم بازار موبایل خواستار لغو ممنوعیت
+                  واردات آیفون ۱۴ شدند.
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>17</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>سه روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/2022-10-iphone-14-pro-max-back-design-638bb8b4ef7c1a7ce6f28276.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="latest-post d-flex">
+              <div class="latest-caption d-flex">
+                <h3>
+                  دستگاه تصفیه هوا چیست و هنگام خرید به چه نکاتی باید توجه کنیم؟
+                </h3>
+                <p>
+                  دستگاه تصفیه هوا چیست و هنگام خرید به چه نکاتی باید توجه کنیم؟
+                  دستگاه تصفیه‌ی هوا راهکاری مناسب برای فرار از مریضی‌های مرتبط‌
+                  به آلودگی است. هنگام خرید این دستگاه به چه نکاتی توجه کنیم؟
+                </p>
+
+                <div class="latest-comment d-flex">
+                  <div class="d-flex">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>17</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>سه روز پیش</span>
+                  </div>
+
+                  <div class="d-flex">
+                    <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="latest-post-img">
+                <img
+                  src="images/2017-12-772319cb-edba-46f2-9e3e-64fd4dfb6dbb-638ba2d6e159b53fae1f77ee.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <a href="#" class="latest-more-link d-flex">
+              <p>مشاهده مطالب بیشتر</p>
+              <i class="fa-solid fa-arrow-left"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- behtarin maghalat :  -->
+      <section class="best-articles">
+        <div class="best-articles-header d-flex">
+          <h2>بهترین مقالات</h2>
+          <a href="#" class="d-flex">
+            <p>مشاهده بیشتر</p>
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <div class="main-btn d-flex">
+          <button class="most-view">پربازدیدترین های ماه</button>
+          <button>محبوب ترین</button>
+          <button>پربحث ترین</button>
+          <button>آموزش</button>
+          <button>راهنمای خرید</button>
+        </div>
+
+        <div class="best-articles-posts d-flex">
+
+          <div class="single-post d-flex">
+            <img
+              src="images/best-gaming-android-tabs-64c53c1fd848873bb4e618da.webp"
+              alt=""
+            />
+            <p>
+              بهترین گوشی های گیمینگ و مخصوص بازی
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/2022-10-best-xiaomi-phone-cover-638bb5a51d67bb742b229260.webp"
+              alt=""
+            />
+            <p>
+              راهنمای خرید بهترین گوشی شیایومی از 3 میلیون تا 40 میلیون تومان
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/internet-service-adsl-63b2c1fae73a00a3a2143688.webp"
+              alt=""
+            />
+            <p>
+              مقایسه تعرفه اینترنت ADSL،فیبرنوری و TDLTE؛از زیتل و پیشگامان تا شاتل و مبین نت 
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/2022-8-how-to-download-from-youtube-638baf1b371c6afdc8ff07d3.webp"
+              alt=""
+            />
+            <p>
+              آموزش دانلود از یوتیوب با گوشی های اندرویدی و آیفون، لینک مستقیم و تلگرام
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/ai-robot-machine-agriculture-64a45e2d0f068bdcb3a57764.jpg"
+              alt=""
+            />
+            <p>
+              تماشا کنید : این ربات به لطف هوش مصنوعی، کشاورزی را برای همیشه متحول میکند
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+          <div class="single-post d-flex">
+            <img
+              src="images/7d7185dd-6525-45d0-8df7-5c93396d0897-64a12ab40f068bdcb3a56fa0.webp"
+              alt=""
+            />
+            <p>
+              شروع طرح معافیت از کمیسیون اسنپ؛ ویژه رانندگانی که از کولر استفاده میکنند
+            </p>
+            <div class="single-post-caption d-flex">
+              <div class="right-recommend-caption d-flex">
+                <div class="d-flex">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>18</span>
+                </div>
+
+                <div class="d-flex">
+                  <i class="fa-regular fa-calendar"></i>
+                  <span>یک روز پیش</span>
+                </div>
+              </div>
+
+              <i class="fa-solid fa-ellipsis post-ellipsis"></i>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- zoomit recommend : -->
+
+      <section class="zoomit-recommend">
+
+        <div class="zoomit-recommend-header">
+          <h2>پیشنهاد زومیت</h2>
+        </div>
+
+        <div class="main-btn d-flex">
+
+          <button class="amoozesh-btn">آموزش های کاربردی</button>
+          <button>راهنمای خرید</button>
+          <button>موبایل</button>
+          <button>سخت افزار</button>
+          <button>بررسی</button>
+          <button>شاتر</button>
+
+        </div>
+
+        <div class="zoomit-content d-flex">
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-1"></div>
+            <h3>آموزش ساخت کاور هایلایت اینستاگرام</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-2"></div>
+            <h3>چطور ایمیل یکبار مصرق بسازیم؟</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-3"></div>
+            <h3>شماره مجازی چیست و چگونه میتوانیم برای خود شماره مجازی داشته باشیم؟</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-4"></div>
+            <h3>دی اکتیو کردن اینستاگرام به صورت موقت و دایمی</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-5"></div>
+            <h3>دیلیت کردن واتس اپ  در اندروید و IOS</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zoomit-post">
+            <div class="post-opacity-img zoomit-6"></div>
+            <h3>بهترین پادکست های فارسی</h3>
+
+            <div class="post-opacity-caption d-flex">
+              <div class="d-flex">
+                <i class="fa-regular fa-clock"></i>
+                <p>مطالعه 6</p>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-regular fa-calendar"></i>
+                <p>6 روز پیش</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+
+      <div class="footer-content d-flex">
+
+        <div class="footer-top d-flex">
+
+          <div class="footer-right">
+
+            <div class="footer-top-red"></div>
+          <ul>
+            <li>مرور تمامی مطالب</li>
+            <li>تبلیغات در زومیت</li>
+            <li>تماس با ما</li>
+            <li>درباره ما</li>
+          </ul>
+          </div>
+
+          <div class="footer-left d-flex">
+            <p>حامیان زومیت</p>
+
+            <ul>
+              <li>پارس پک | میزبانی و پشتیبانی</li>
+              <li>وب رخ | حس خوب پیکسل‌ها</li>
+              <li>TheForge | هسته قدرتمند زومیت</li>
+            </ul>
+          </div>
+
+        </div>
+  
+        <div class="footer-bottom d-flex">
+          <div>
+            <p>
+              © 1402 - 1389 کپی بخش یا کل هر کدام از مطالب زومیت تنها با کسب مجوز مکتوب امکان پذیر است
+            </p>
+          </div>
+
+          <div class="d-flex">
+            <a href="#">
+              <i class="fa-solid fa-square-rss fa-rotation=270"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-wikipedia-w"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-solid fa-clapperboard"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-end"></div>
+
+    </footer>
+  </body>
+</html>
